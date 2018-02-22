@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.cecyt9.ipn.calculator_csbr.MainActivity">
+
+    <Button
+        android:id="@+id/ocho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="8"
+        app:layout_constraintStart_toEndOf="@+id/siete"
+        app:layout_constraintTop_toTopOf="@+id/siete" />
+
+    <Button
+        android:id="@+id/nueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ocho"
+        android:layout_alignBottom="@+id/ocho"
+        android:layout_toEndOf="@+id/ocho"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/ocho"
+        app:layout_constraintTop_toTopOf="@+id/ocho" />
+
+    <Button
+        android:id="@+id/entre"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nueve"
+        android:layout_alignBottom="@+id/nueve"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/nueve"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/nueve"
+        app:layout_constraintTop_toTopOf="@+id/nueve" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="299dp"
+        android:layout_height="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ocho"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/siete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entre"
+        android:layout_alignBottom="@+id/entre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/siete"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintStart_toEndOf="@+id/cuatro"
+        app:layout_constraintTop_toBottomOf="@+id/ocho" />
+
+    <Button
+        android:id="@+id/seis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintStart_toEndOf="@+id/cinco"
+        app:layout_constraintTop_toBottomOf="@+id/nueve" />
+
+    <Button
+        android:id="@+id/por"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="x"
+        app:layout_constraintStart_toEndOf="@+id/seis"
+        app:layout_constraintTop_toBottomOf="@+id/entre" />
+
+    <Button
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/cuatro"
+        app:layout_constraintTop_toBottomOf="@+id/cuatro" />
+
+    <Button
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/uno"
+        app:layout_constraintTop_toBottomOf="@+id/cinco" />
+
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/dos"
+        app:layout_constraintTop_toBottomOf="@+id/seis" />
+
+    <Button
+        android:id="@+id/menos"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/tres"
+        app:layout_constraintTop_toBottomOf="@+id/por" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uno" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/dos" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="="
+        app:layout_constraintStart_toEndOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/tres" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="296dp" />
+</android.support.constraint.ConstraintLayout>
